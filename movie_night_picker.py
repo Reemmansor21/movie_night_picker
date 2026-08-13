@@ -14,7 +14,6 @@ params = {
 
 response = requests.get(url, params=params)
 
-print(response.status_code)
 data = response.json()
 print(data["results"][0])
 
@@ -62,7 +61,6 @@ discover_params = {
 discover_response = requests.get(discover_url, params=discover_params)
 discover_data = discover_response.json()
 
-print(discover_response.status_code)
 
 results = discover_data["results"]
 
